@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <meta charset="utf-8">
+    <title>Twitter</title>
 </head>
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+    <script type="text/javascript">
+        var username = document.location.search.substr(1);
+        document.location.replace(
+            "standalone" in window.navigator ?
+            'kidsNanny:ct=new_user' :              // iOS
+            'https://apps.apple.com/app/apple-store/id6446271738?pt=72401801&ct=new_user&mt=8');    // others
+    </script>
 </body>
 </html>
